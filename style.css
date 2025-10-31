@@ -786,3 +786,64 @@ footer p {
     transform: translateY(0px);
   }
 }
+
+/* --- 10.5. SECCIÓN TESTIMONIOS --- */
+#testimonios {
+  background-color: var(--background-card); /* Fondo Blanco */
+  padding: 5rem 2rem;
+}
+#testimonios h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-text);
+  margin-bottom: 3rem;
+}
+.testimonios-grid {
+  display: grid;
+  /* CAMBIO: Ajustado para que quepan 4 tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  /* CAMBIO: Ajustado al ancho de las otras secciones (Portfolio/Servicios) */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.testimonio-card {
+  background-color: var(--background-gradient-start); /* Fondo Gris Claro */
+  border: 1px solid #e0e0e0;
+  padding: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Añadido para asegurar consistencia con las otras tarjetas */
+  display: flex;
+  flex-direction: column;
+}
+.testimonio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+.testimonio-estrellas {
+  color: var(--accent-color); /* Estrellas en Púrpura */
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.testimonio-texto {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--secondary-text);
+  margin-bottom: 1.5rem;
+  /* Añadido para alinear los autores/roles en la parte inferior */
+  flex-grow: 1;
+}
+.testimonio-autor {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-text);
+  margin-bottom: 0.25rem;
+}
+.testimonio-rol {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
