@@ -849,3 +849,43 @@ footer p {
   font-weight: 600;
   color: var(--accent-color);
 }
+
+/* --- 10.8. BOTÓN SCROLL TO TOP --- */
+#scrollToTopBtn {
+  position: fixed; /* Fijo en la pantalla */
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color); /* Púrpura */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Circular */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  /* Oculto por defecto */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* Clase que le añadirá el JS para mostrarlo */
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#scrollToTopBtn:hover {
+  background-color: var(--primary-text); /* Negro al pasar el mouse */
+  transform: scale(1.1);
+}
