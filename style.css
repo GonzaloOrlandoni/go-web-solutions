@@ -717,23 +717,27 @@ h3 {
 
 /* --- 12. FOOTER --- */
 footer {
+  /* Fondo negro: usamos la variable background-dark */
   background-color: var(--background-dark) !important;
+
+  /* Color base del texto (debe ser claro) */
   color: var(--background-light) !important;
+
   text-align: center;
   padding: 3rem 2rem;
-  position: relative !important;
-  z-index: 100 !important;
-  display: block !important;
-  visibility: visible !important;
+
+  /* Aseguramos que esté al frente */
+  position: relative;
+  z-index: 100;
 }
 
-/* Estilos para el enlace del logo en el footer */
+/* Estilos para el enlace del logo principal en el footer */
 footer .logo {
   margin-bottom: 1.5rem;
   display: inline-block;
 }
 
-/* Estilos para la IMAGEN del logo en el footer */
+/* Estilos para la IMAGEN del logo principal */
 footer .logo img {
   width: 70px;
   height: 70px;
@@ -741,36 +745,38 @@ footer .logo img {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Efecto hover para la IMAGEN del logo */
+/* Efecto hover para la IMAGEN del logo principal */
 footer .logo img:hover {
   transform: scale(1.1);
   opacity: 0.9;
 }
 
-/* --- NUEVO: Estilos para los logos de GitHub y LinkedIn --- */
+/* --- Estilos para los logos de GitHub y LinkedIn --- */
 .footer-socials {
-  margin-bottom: 1.5rem; /* Espacio entre los logos y el copyright */
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
-  gap: 1.5rem; /* Espacio entre los dos logos */
+  gap: 1.5rem;
 }
 
 .footer-socials img {
-  width: 35px; /* Tamaño sutil para los logos */
+  width: 35px;
   height: 35px;
-  opacity: 0.7; /* Ligeramente transparentes para no competir con el logo principal */
+  /* La clave: la imagen es blanca/clara para que resalte, pero la tratamos para que no tenga bordes */
+  background-color: transparent;
+  opacity: 0.7;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-socials img:hover {
-  transform: scale(1.15); /* Efecto hover interactivo */
-  opacity: 1; /* Opacidad completa al pasar el mouse */
+  transform: scale(1.15);
+  opacity: 1;
 }
-/* --- FIN DE NUEVOS ESTILOS --- */
 
-/* Estilos para el copyright */
+/* Estilos para el texto de copyright (aseguramos color claro) */
 footer p {
-  color: #999 !important;
+  color: #cccccc !important; /* Gris claro que contrasta con el negro */
+  margin-top: 1.5rem;
 }
 
 /* --- ANIMACIÓN SUTIL PARA EL HERO --- */
