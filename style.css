@@ -762,20 +762,24 @@ footer .logo img:hover {
 .footer-socials img {
   width: 35px;
   height: 35px;
-  /* La clave: la imagen es blanca/clara para que resalte, pero la tratamos para que no tenga bordes */
   background-color: transparent;
-  opacity: 0.7;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  /* MODIFICADO: Aumentamos la opacidad base y añadimos filtro */
+  opacity: 0.9; /* Más cerca de 1 (totalmente opaco) */
+  filter: brightness(1.2); /* Les da un brillo sutil */
+
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
 }
 
 .footer-socials img:hover {
   transform: scale(1.15);
-  opacity: 1;
+  opacity: 1; /* Opacidad total al pasar el mouse */
+  filter: brightness(1.6); /* ¡Aumentamos el brillo al pasar el mouse! */
 }
 
-/* Estilos para el texto de copyright (aseguramos color claro) */
+/* Estilos para el copyright */
 footer p {
-  color: #cccccc !important; /* Gris claro que contrasta con el negro */
+  color: #cccccc !important;
   margin-top: 1.5rem;
 }
 

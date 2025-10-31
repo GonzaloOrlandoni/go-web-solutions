@@ -32,4 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
     once: false,
     offset: 50,
   });
-});
+  // --- MENSAJE DE CONSOLA PERSONALIZADO ---
+  if (window.console && window.console.log) {
+    const style = "color: #5E3B7D; font-size: 16px; font-weight: bold;";
+    console.log("%c👋 ¿Qué tal? ¡Gracias por revisar la consola!", style);
+    console.log("Este sitio fue diseñado y desarrollado con ❤️ por GO Web Solutions.");
+    console.log("¿Buscas un desarrollador? Envíame un mensaje: tu-email@gows.com");
+  }
+}); // <-- Cierre del DOMContentLoaded
