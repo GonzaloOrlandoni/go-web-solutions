@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- INICIALIZADOR DE ANIMACIONES (AOS) ---
   AOS.init({
     duration: 800,
-    once: false, // <-- Asegúrate que esto esté en 'false'
+    once: false, // Animación constante
     offset: 50,
   });
 });
