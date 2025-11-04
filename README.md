@@ -1,52 +1,41 @@
-# 🟣 GO Web Solutions - Sitio Web Institucional
+# 🚀 GO Web Solutions - Tu Marca, Tu Presencia Digital
 
-![Vista previa de la página de inicio de GO Web Solutions]
-_(Sustituir con una captura de pantalla clara de la sección Hero del sitio)_
+## Sitio Web Oficial de Gonzalo Orlandoni
 
-**Sitio en vivo:** [https://gonzaloorlandoni.github.io/go-web-solutions/](https://gonzaloorlandoni.github.io/go-web-solutions/)
+![Captura de la página de inicio de GO Web Solutions](img/preview-image.png)
 
----
-
-## 🚀 OVERVIEW Y OBJETIVO
-
-Este es el repositorio del sitio web oficial de **GO Web Solutions**. Su objetivo principal es actuar como un _Case Study_ de las mejores prácticas, presentando la marca de manera profesional y generando leads de contacto.
-
-### Foco Estratégico:
-
-- **Coherencia de Marca:** Demostrar cómo se aplica una paleta de colores (Púrpura, Gris, Negro) y tipografía de manera consistente en todo el diseño.
-- **Performance (UX):** Uso de Lazy Loading y optimización de animaciones para una experiencia de usuario rápida y fluida.
-- **Conversión:** Integración de un formulario de contacto profesional y CTAs claros.
+**Sitio en Vivo:** [https://gonzaloorlandoni.github.io/go-web-solutions/](https://gonzaloorlandoni.github.io/go-web-solutions/)
 
 ---
 
-## 💻 TECNOLOGÍAS Y ARQUITECTURA
+## 🎯 OBJETIVO: Creador de Marca y Portafolio Profesional
 
-| Stack              | Detalle                                                                                       |
-| :----------------- | :-------------------------------------------------------------------------------------------- |
-| **Estructura**     | HTML5 Semántico y accesible.                                                                  |
-| **Estilos**        | CSS3 nativo, Flexbox/Grid, **Variables CSS (`:root`)** para la gestión centralizada del tema. |
-| **Interactividad** | JavaScript ES6+ (Para menú responsive, validación simple, Scroll-to-Top).                     |
-| **Animaciones**    | **AOS (Animate On Scroll)** para transiciones fluidas de entrada.                             |
-| **Despliegue**     | GitHub Pages (Frontend Hosting).                                                              |
+Este repositorio es el sitio web oficial de GO Web Solutions, funcionando como un **Caso de Estudio** de las mejores prácticas de desarrollo. Demuestra la capacidad de construir soluciones web modernas, optimizadas y con una experiencia de usuario (UX) fluida.
 
-## ✨ CARACTERÍSTICAS PROFESIONALES
+### 🌐 Habilidades Clave
 
-### 1. Diseño y Branding
+| Área de Foco     | Detalle de Implementación                                       |
+| :--------------- | :-------------------------------------------------------------- |
+| **Arquitectura** | HTML5 Semántico, **Variables CSS** para gestión de tema.        |
+| **Rendimiento**  | Implementación de **Lazy Loading** en todas las imágenes.       |
+| **Interacción**  | Librería AOS (Animaciones en Scroll) y botón **Scroll-to-Top**. |
+| **Optimización** | Metadatos SEO (Open Graph) verificados y funcionales.           |
 
-- **Identidad:** Paleta de colores Púrpura/Gris y un fondo unificado de gradiente sutil.
-- **Componentes:** Uso coherente de tarjetas flotantes con efectos `box-shadow` y `hover` en todas las secciones (Servicios, Portfolio, Proceso).
-- **Footer:** Logo interactivo y enlaces sociales integrados visualmente al fondo oscuro.
+---
 
-### 2. Optimización y Accesibilidad
+## ✨ Proyecto Destacado: FitLab Landing Page
 
-- **SEO:** Metadatos Open Graph (OG) y Twitter Card configurados para una vista previa profesional al compartir el enlace.
-- **Performance:** Implementación de `loading="lazy"` en todas las imágenes para mejorar la velocidad de carga inicial (Core Web Vitals).
-- **Accesibilidad (A11y):** Navbar con atributos `aria-expanded` y `aria-controls`.
+A continuación, un ejemplo de las soluciones de alto valor que se ofrecen, con un diseño enfocado al rendimiento y la conversión para la industria del fitness.
 
-### 3. Funcionalidad Clave
+**Visualización del Proyecto:**
 
-- **Formulario:** Integración de formulario de contacto profesional (via Formspree) en lugar de un enlace _mailto:_.
-- **UX Móvil:** Menú de hamburguesa funcional y botón de **Scroll-to-Top** que aparece dinámicamente al bajar.
+![Captura de la Landing Page FitLab](img/proyecto-fitlab.png)
+
+### Características de FitLab
+
+- **Enfoque:** Diseño estratégico para **Conversión** (captación de miembros).
+- **Integración:** Carrusel de testimonios interactivo y funcionalidad de FAQ (Acordeón).
+- **Tecnología:** Uso de **SASS** y metodología modular.
 
 ---
 
